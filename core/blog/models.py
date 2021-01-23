@@ -25,7 +25,7 @@ class Post(models.Model):
     options = (
         ('draft', 'Draft'),
         ('published', 'Published'),
-    )9
+    )
 
     category = models.ForeignKey(
         Category, on_delete=models.PROTECT,default=1
@@ -43,3 +43,9 @@ class Post(models.Model):
     status = models.CharField(
         max_length=10, choices=options, default='published'
     )
+
+
+
+    #STOPPED AT:
+    #https://www.youtube.com/watch?v=soxd_xdHR0o
+    #MINT 46
